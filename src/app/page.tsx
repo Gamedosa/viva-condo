@@ -14,7 +14,7 @@ export default function Home() {
 
   const morador = {
     primeiroNome: 'Júlia',
-    sobrenome: 'Peixista'
+    sobrenome: 'Barbosa'
   };
 
   function obterSaudacao(morador:null | Morador) {
@@ -25,8 +25,10 @@ export default function Home() {
   }
 
   return(
-    <div className="flex flex-col items-center justify-center h-screen">
-      <h1 className="text-4xl text-bold">{obterSaudacao(morador)}</h1>
+    <div className="bg-red-300">
+      <div className="flex flex-col items-center justify-center h-screen">
+        <h1 className="text-4xl text-bold bg-red-500 rounded-full border-black p-5">{obterSaudacao(morador)}</h1>
+      </div>
     </div>
   );
 };
