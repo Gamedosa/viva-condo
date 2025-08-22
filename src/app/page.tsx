@@ -7,10 +7,6 @@ type Morador = {
 
 export default function Home(){
 
-const morador ={
-    primeiroNome : "Sandro",
-    sobrenome: 'pereira'
-  }
 function formatarNomeMorador(morador: any){
   return morador.primeiroNome + '' + morador.sobrenome;
 }
@@ -22,12 +18,18 @@ function obterSaudacao(morador : null | Morador){
   return <span> Olá Estranho!!!</span>;
 }
 
+const morador ={
+    primeiroNome : "Sandro",
+    sobrenome: 'pereira'
+  }
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      
-      <h1 className="text-4x1 font-bold">{obterSaudacao(morador)}</h1>
-      
+    <div id="principal" className="min-h-screen flex items-center justify-center bg-black">
+      <div id="componente-azul" className="card-azul">
+      <h1 id="name" className="text-2x1 font-bold text-center">
+          {obterSaudacao(morador)}
+        </h1>
+      </div>      
     </div>
   );
 };

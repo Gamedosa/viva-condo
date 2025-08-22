@@ -24,3 +24,12 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.card-azul {
+  background-color: #1442c0; /* Azul */
+  color: white;
+  padding: 2rem;
+  border-radius: 0.6rem;
+  text-align: center;
+  width: 24rem;
+}
