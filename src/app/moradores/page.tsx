@@ -1,13 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
-
-import { getCondominios, ICondominio } from "@/services/api-condominio";
-
 export default function ListaMoradores() {
 
-    const [moradores, setMoradores] = useState<ICondominio[]>([]);
-    
   return (
     <div className="p-6 max-w-full">
         <div className="mb-4 flex items-center justify-between gap-4">
