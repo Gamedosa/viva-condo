@@ -84,6 +84,7 @@ export default function Login() {
   if (checkingSession) {
     return null;
   }
+  
   return (
 <div className="flex h-screen flex-col md:flex-row">
 <div className="w-full flex items-center justify-center p-6">
