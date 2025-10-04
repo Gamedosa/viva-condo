@@ -49,7 +49,7 @@ export default function Login() {
     e.preventDefault(); // Impede o reload da página
 
     setLoading(true);
- 
+
     try {
 
       const { data, error } = await supabase.auth.signInWithPassword({ email, password });
